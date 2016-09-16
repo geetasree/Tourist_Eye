@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Nearby">
+        <menu>
+            <item
+                android:id="@+id/nav_hospital"
+                android:icon="@drawable/hospital_icon"
+                android:title="Hospital" />
+            <item
+                android:id="@+id/nav_hotel"
+                android:icon="@drawable/hotel_icon"
+                android:title="Hotel" />
+            <item
+                android:id="@+id/nav_atm"
+                android:icon="@drawable/atm"
+                android:title="ATM" />
+        </menu>
+    </item>
+
+    <item android:title="Climate">
+        <menu>
+            <item
+                android:id="@+id/nav_maps"
+                android:icon="@drawable/map_icon2"
+                android:title="Maps" />
+            <item
+                android:id="@+id/nav_changeCity"
+                android:icon="@drawable/change_icon"
+                android:title="Change City" />
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>

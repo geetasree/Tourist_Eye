@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/highlight"
+    tools:context=".Activity.ChangeLocationActivity"
+    android:contextClickable="false">
+    <AutoCompleteTextView
+        android:id="@+id/cityAutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_a_city"
+        android:textColor="@color/colorSubTitle"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true">
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/change_location"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:text="@string/change_city"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="saveCity"
+        android:padding="12dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="135dp"
+        android:layout_alignLeft="@+id/cityAutoCompleteTextView"
+        android:layout_alignStart="@+id/cityAutoCompleteTextView"
+        android:layout_alignRight="@+id/cityAutoCompleteTextView"
+        android:layout_alignEnd="@+id/cityAutoCompleteTextView" />
+
+    <Button
+        android:id="@+id/current_location"
+        android:layout_width="270dp"
+        android:layout_height="64dp"
+        android:text="@string/change_to_current_location"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goCurrentLocation"
+        android:padding="12dp"
+        android:background="@drawable/buttonshape"
+        android:layout_below="@+id/change_location"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/change_location"
+        android:layout_alignStart="@+id/change_location"
+        android:layout_alignRight="@+id/change_location"
+        android:layout_alignEnd="@+id/change_location" />
+
+
+
+</RelativeLayout>

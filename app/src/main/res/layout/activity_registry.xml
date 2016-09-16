@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/highlight"
+    tools:context=".Activity.RegistryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtRegLogIn"
+                android:textColor="@color/colorSubTitle"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:hint="Enter Username"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSubTitle"
+                android:inputType="textPassword"
+                android:id="@+id/edtRegPassword"
+                android:layout_below="@id/edtRegLogIn"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:hint="Enter Password"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSubTitle"
+                android:inputType="textPassword"
+                android:id="@+id/edtRegPasswordConfirmation"
+                android:layout_below="@id/edtRegPassword"
+                android:hint="Enter Password Again"
+                android:paddingLeft="5dp"
+                android:singleLine="true"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgGender"
+                android:layout_below="@+id/edtRegPasswordConfirmation"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rdbMale"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:checked="true"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rdbFeMale"
+                    />
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rdgGender"
+                android:id="@+id/edtRegEmail"
+                android:hint="Enter Email"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorSubTitle"
+                />
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/userimage"
+                android:layout_below="@id/edtRegEmail"
+                android:background="@color/highlight"
+                android:id="@+id/imgPic"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/btnBrowsePhoto"
+                android:id="@+id/btnBrowse"
+                android:textAllCaps="false"
+                android:onClick="choosePicture"
+                android:src="@drawable/profile_pic"
+                android:layout_alignTop="@+id/imgPic"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnRegis"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:text="@string/btnRegister"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="registration"
+        android:padding="12dp"
+        android:background="@drawable/buttonshape"
+        android:layout_below="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

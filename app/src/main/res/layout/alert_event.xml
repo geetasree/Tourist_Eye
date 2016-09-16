@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event name"
+        android:textSize="16sp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:singleLine="true"
+        android:textColor="@color/colorSubTitle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEventName"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/edtEventAmount"
+        android:hint="Event Budget"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/colorSubTitle"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="From"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/edtEventAmount"
+        android:id="@+id/edtEventFrom"
+        android:singleLine="true"
+        android:textColor="@color/colorSubTitle"
+        android:textSize="16sp">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEventAmount"
+        android:layout_alignBottom="@id/edtEventFrom"
+        android:layout_toRightOf="@id/edtEventFrom"
+        android:contentDescription="@string/selectdate1"
+        android:cropToPadding="true"
+        android:onClick="selectDateFrom"
+        android:src="@drawable/ic_date"
+        />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="To"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="showDateScreen"
+        android:layout_below="@id/edtEventFrom"
+        android:id="@+id/edtEventTo"
+        android:singleLine="true"
+        android:textColor="@color/colorSubTitle"
+        android:textSize="16sp">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton1"
+        android:layout_alignBottom="@id/edtEventTo"
+        android:layout_toRightOf="@id/edtEventTo"
+        android:contentDescription="@string/selectdate2"
+        android:cropToPadding="true"
+        android:onClick="selectDateTo"
+        android:src="@drawable/ic_date" />
+
+
+
+</RelativeLayout>

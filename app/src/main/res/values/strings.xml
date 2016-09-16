@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Tourist Eye</string>
+    <string name="title_activity_location_maps">Map</string>
+    <string name="title_activity_event_list">Tourist Eye</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="city_country">Dhaka, Bangladesh</string>
+    <string name="date_today">Friday, 8 July</string>
+    <string name="current_temperature">26</string>
+    <string name="weather_information">Partly Cloud</string>
+    <string name="temp_information">26, partly cloudy</string>
+    <string name="wind">WIND</string>
+    <string name="wind_speed">18 km/h</string>
+    <string name="humidity">HUMIDITY</string>
+    <string name="humidity_rate">73%</string>
+    <string name="day_of_week">Mon</string>
+    <string name="location_hints">Type city or postcode</string>
+    <string name="location_example">Example Malmo, Sweden</string>
+    <string name="add_new_location">Add new location</string>
+    <string name="stored_location">You can only store 5 locations</string>
+    <string name="permission_notice">This permission is important but you can as well set your location on Location page</string>
+    <string name="go_to_location">Go to location setting</string>
+    <string name="enter_a_city">Enter a City Name</string>
+    <string name="add_city">Change City</string>
+    <string name="title_activity_show_map">Map</string>
+    <string name="change_city">Change City</string>
+    <string name="change_to_current_location">Change to Current Location</string>
+    <string name="edtLoginName">Login Name</string>
+    <string name="edtpassword">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="btnRegister">Registration</string>
+
+
+    <string name="txtUserName">Name:</string>
+    <string name="txtLoginName">Login Name:</string>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="txtDescription">txtDescription</string>
+    <string name="Password">txtPassword</string>
+    <string name="txtpassword">Password</string>
+    <string name="txtEmail">email</string>
+    <string name="txtGender">Gender</string>
+    <string name="txtbirthdate">Birthdate</string>
+    <string name="txtFirst">FirstName</string>
+    <string name="txtLast">LastName</string>
+    <string name="spnGender">Gender</string>
+    <string name="rdbMale">Male</string>
+    <string name="rdbfemale">Female</string>
+    <string name="title_activity_no_use_navigate">NoUseNavigate</string>
+    <string name="btnBrowsePhoto">Browse</string>
+    <string name="expense">Expense</string>
+    <string name="here"><u>Here </u></string>
+    <string name="log_out">Log Out</string>
+    <string name="selectdate1">Select from date</string>
+    <string name="selectdate2">Select to date</string>
+    <string name="save">Save</string>
+
+
+</resources>
